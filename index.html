@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1">
+    <title>Burger Chilli</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="image/icon/icon.ico">
+</head>
+<body>
+<div class="wrapper">
+    <!--Header-->
+    <header class="header">
+        <div class="container">
+            <div class="header_content">
+                <div class="header_logo">
+                    <h5 class="header_title">
+                        BURGER<span>.</span>CHILLI
+                    </h5>
+                    <h6 class="header_subtitle">
+                        САМЫЕ ОСТРЫЕ БУРГЕРЫ
+                    </h6>
+                </div>
+                <div class="header_nav">
+                    <div class="nav_content">
+                        <a data-goto=".menu_point" href="#" class="nav_item">
+                            Меню
+                        </a>
+                        <a data-goto=".about_point" href="#" class="nav_item">
+                            О нас
+                        </a>
+                        <a data-goto=".delivery" href="#" class="nav_item">
+                            Доставка
+                        </a>
+                        <a data-goto=".contacts" href="#" class="nav_item">
+                            Контакты
+                        </a>
+                    </div>
+                </div>
+
+                <div class="header_order">
+                    <div class="order_item">
+                        <a href="#popup_basket" class="popup_js">
+                            <img src="svg/svg/shopping-basket.svg" alt="shopping-basket" class="order_icon shopping-basket">
+                        </a>
+                        <div class="order_text total_price">
+                            0 Руб.
+                        </div>
+                        <div class="order_info">
+                            Пусто
+                        </div>
+                    </div>
+                    <div class="order_item">
+                        <img src="svg/svg/clock.svg" alt="clock" class="order_icon order_icon--second">
+                        <div class="order_text">
+                            Доставка
+                        </div>
+                        <div class="order_info">
+                            9:00-21:00
+                        </div>
+                    </div>
+                    <div class="order_item">
+                        <img src="svg/svg/phone-call.svg" alt="phone-call" class="order_icon order_icon--third">
+                        <div class="order_text">
+                            +375 397 90 82
+                        </div>
+                        <div class="order_info">
+                            <a class="order--call popup_js" href="#popup_call">обратный звонок</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--header toggle-->
+              <button class="toggle" type="button" id="toggle">
+                  <span class="toggle_item">Menu</span>
+              </button>
+            </div>
+        </div>
+    </header>
+   <!--/Header-->
+
+    <!--Intro-->
+    <section class="intro">
+        <div class="container">
+            <div class="slider">
+                <div class="slides">
+
+                    <input class='radio' type="radio" name="radio-btn" id="radio1">
+                    <input class='radio' type="radio" name="radio-btn" id="radio2">
+                    <input class='radio' type="radio" name="radio-btn" id="radio3">
+                    <input class='radio' type="radio" name="radio-btn" id="radio4">
+
+                    <div class="slide slide--first">
+                        <h1 class="slider_title">
+                            Чёткий бургер
+                        </h1>
+                        <div class="slider_composition">
+                            Булочка, бекон, сыр, курица, соус
+                        </div>
+                        <div class="slider_burger">
+                            <div class="slider_info">
+                                New
+                            </div>
+                            <img src="image/Intro/burger.webp" alt="img">
+                            <div class="slider_price">
+                                18 руб.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <h1 class="slider_title">
+                            Острый бургер
+                        </h1>
+                        <div class="slider_composition">
+                            Булочка, бекон, сыр, курица, соус
+                        </div>
+                        <div class="slider_burger">
+                            <div class="slider_info">
+                                New
+                            </div>
+                            <img src="image/Intro/burger.webp" alt="img">
+                            <div class="slider_price">
+                                21 руб.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <h1 class="slider_title">
+                            Нежный бургер
+                        </h1>
+                        <div class="slider_composition">
+                            Булочка, бекон, сыр, курица, соус
+                        </div>
+                        <div class="slider_burger">
+                            <div class="slider_info">
+                                Hot
+                            </div>
+                            <img src="image/Intro/burger.webp" alt="img">
+                            <div class="slider_price">
+                                22 руб.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <h1 class="slider_title">
+                            Полезный бургер
+                        </h1>
+                        <div class="slider_composition">
+                            Булочка, бекон, сыр, курица, соус
+                        </div>
+                        <div class="slider_burger">
+                            <div class="slider_info">
+                                Hot
+                            </div>
+                            <img src="image/Intro/burger.webp" alt="img">
+                            <div class="slider_price">
+                                24 руб.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slider_buttons">
+                        <button class="slider_tobasket" type="button">
+                            В корзину
+                            <img src="svg/svg/shopping-basket.svg" alt="shopping-basket">
+                        </button>
+                        <button class="slider_tocatalog" type="button">
+                            перейти в каталог
+                            <img src="svg/svg/right.svg" alt="arrow">
+                        </button>
+                    </div>
+
+                   <div class="slider_page">
+                       <span class="page_current">
+                           01/
+                       </span>
+                       <span class="page_total">
+                           04
+                       </span>
+                   </div>
+
+                    <div class="navigation-buttons">
+                        <button id="prev" type="button">
+                            prev
+                            <span class="slider_arrow"></span>
+                        </button>
+                        <button id="next" type="button" name="next">
+                            next
+                            <span class="slider_arrow slider_arrow--next"></span>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/Intro-->
+
+    <!--Menu-->
+    <section class="menu">
+        <div class="container">
+            <div class="menu_point"></div>
+            <h1 class="menu_title">Меню</h1>
+
+            <div class="menu_slider">
+
+                <div class="menu_slides">
+
+                    <input class='radio_menu' type="radio" name="radio_menu" id="radio_menu1">
+                    <input class='radio_menu' type="radio" name="radio_menu" id="radio_menu2">
+                    <input class='radio_menu' type="radio" name="radio_menu" id="radio_menu3">
+                    <input class='radio_menu' type="radio" name="radio_menu" id="radio_menu4">
+
+                    <div class="menu_slide menu_slide--first">
+                        <div class="menu_burgers">
+                            <div class="menu_burger">
+                                <div class="menu_weight">
+                                    450г.
+                                </div>
+                                <img src="image/Menu/menu_burger_1.webp" alt="burger" class="menu_img">
+                                <h5 class="menu_name">
+                                    Правильный бургер
+                                </h5>
+                                <div class="menu_composition">
+                                    Булочка, бекон, сыр, 2 котлеты, зелень, соус
+                                </div>
+                                <button class="menu_price">
+                                    21 руб.
+                                    <img src="svg/svg/shopping-basket.svg" alt="shopping-basket">
+                                </button>
+                                <div class="menu_add">
+                                    <button class="minus">
+                                        -
+                                    </button>
+                                    <span class="amount">1</span>
+                                    <button class="plus">
+                                        +
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="menu_burger">
+                                <div class="menu_weight">
+                                    450г.
+                                </div>
+                                <img src="image/Menu/menu_burger_2.webp" alt="burger" class="menu_img menu_img--second">
+                                <h5 class="menu_name">
+                                    Xот чилли бургер
+                                </h5>
+                                <div class="menu_composition">
+                                    Булочка, бекон, сыр, 2 котлеты, зелень, соус
+                                </div>
+                                <button class="menu_price">
+                                    20 руб.
+                                    <img src="svg/svg/shopping-basket.svg" alt="shopping-basket">
+                                </button>
+                                <div class="menu_add">
+                                    <button class="minus">
+                                        -
+                                    </button>
+                                    <span class="amount">1</span>
+                                    <button class="plus">
+                                        +
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="menu_burger">
+                                <div class="menu_weight">
+                                    450г.
+                                </div>
+                                <img src="image/Menu/menu_burger_3.webp" alt="burger" class="menu_img menu_img--third">
+                                <h5 class="menu_name">
+                                    Гавайский бургер
+                                </h5>
+                                <div class="menu_composition">
+                                    Булочка, бекон, сыр, 2 котлеты, зелень, соус
+                                </div>
+                                <button class="menu_price">
+                                    19 руб.
+                                    <img src="svg/svg/shopping-basket.svg" alt="shopping-basket">
+                                </button>
+                                <div class="menu_add">
+                                    <button class="minus">
+                                        -
+                                    </button>
+                                    <span class="amount">1</span>
+                                    <button class="plus">
+                                        +
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="menu_burger">
+                                <div class="menu_weight">
+                                    450г.
+                                </div>
+                                <img src="image/Menu/menu_burger_4.webp" alt="burger" class="menu_img menu_img--fourth">
+                                <h5 class="menu_name">
+                                    Cырный бургер
+                                </h5>
+                                <div class="menu_composition">
+                                    Булочка, бекон, сыр, 2 котлеты, зелень, соус
+                                </div>
+                                <button class="menu_price">
+                                    25 руб.
+                                    <img src="svg/svg/shopping-basket.svg" alt="shopping-basket">
+                                </button>
+                                <div class="menu_add">
+                                    <button class="minus">
+                                        -
+                                    </button>
+                                    <span class="amount">1</span>
+                                    <button class="plus">
+                                        +
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu_slide">
+                        <div class="menu_burgers">
+                            <div class="menu_burger">
+                                <div class="menu_weight">
+                                    450г.
+                                </div>
+                                <img src="image/Menu/menu_burger_1.webp" alt="burger" class="menu_img">
+                                <h5 class="menu_name">
+                                    Правильный бургер
+                                </h5>
+                                <div class="menu_composition">
+                                    Булочка, бекон, сыр, 2 котлеты, зелень, соус
+                                </div>
+                                <button class="menu_price">
+                                    21 руб.
+                                    <img src="svg/svg/shopping-basket.svg" alt="shopping-basket">
+                                </button>
+                                <div class="menu_add">
+                                    <button class="minus">
+                                        -
+                                    </button>
+                                    <span class="amount">1</span>
+                                    <button class="plus">
+                                        +
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="menu_burger">
+                                <div class="menu_weight">
+                                    450г.
+                                </div>
+                                <img src="image/Menu/menu_burger_2.webp" alt="burger" class="menu_img menu_img--second">
+                                <h5 class="menu_name">
+                                    Xот чилли бургер
+                                </h5>
+                                <div class="menu_composition">
+                                    Булочка, бекон, сыр, 2 котлеты, зелень, соус
+                                </div>
+                                <button class="menu_price">
+                                    20 руб.
+                                    <img src="svg/svg/shopping-basket.svg" alt="shopping-basket">
+                                </button>
+                                <div class="menu_add">
+                                    <button class="minus">
+                                        -
+                                    </button>
+                                    <span class="amount">1</span>
+                                    <button class="plus">
+                                        +
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="menu_burger">
+                                <div class="menu_weight">
+                                    450г.
+                                </div>
+                                <img src="image/Menu/menu_burger_3.webp" alt="burger" class="menu_img menu_img--third">
+                                <h5 class="menu_name">
+                                    Гавайский бургер
+                                </h5>
+                                <div class="menu_composition">
+                                    Булочка, бекон, сыр, 2 котлеты, зелень, соус
+                                </div>
+                                <button class="menu_price">
+                                    19 руб.
+                                    <img src="svg/svg/shopping-basket.svg" alt="shopping-basket">
+                                </button>
+                                <div class="menu_add">
+                                    <button class="minus">
+                                        -
+                                    </button>
+                                    <span class="amount">1</span>
+                                    <button class="plus">
+                                        +
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="menu_burger">
+                                <div class="menu_weight">
+                                    450г.
+                                </div>
+                                <img src="image/Menu/menu_burger_4.webp" alt="burger" class="menu_img menu_img--fourth">
+                                <h5 class="menu_name">
+                                    Cырный бургер
+                                </h5>
+                                <div class="menu_composition">
+                                    Булочка, бекон, сыр, 2 котлеты, зелень, соус
+                                </div>
+                                <button class="menu_price">
+                                    25 руб.
+                                    <img src="svg/svg/shopping-basket.svg" alt="shopping-basket">
+                                </button>
+                                <div class="menu_add">
+                                    <button class="minus">
+                                        -
+                                    </button>
+                                    <span class="amount">1</span>
+                                    <button class="plus">
+                                        +
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu_slide">
+                        <div class="menu_burgers">
+                            <div class="menu_burger">
+                                <div class="menu_weight">
+                                    450г.
+                                </div>
+                                <img src="image/Menu/menu_burger_1.webp" alt="burger" class="menu_img">
+                                <h5 class="menu_name">
+                                    Правильный бургер
+                                </h5>
+                                <div class="menu_composition">
+                                    Булочка, бекон, сыр, 2 котлеты, зелень, соус
+                                </div>
+                                <button class="menu_price">
+                                    21 руб.
+                                    <img src="svg/svg/shopping-basket.svg" alt="shopping-basket">
+                                </button>
+                                <div class="menu_add">
+                                    <button class="minus">
+                                        -
+                                    </button>
+                                    <span class="amount">1</span>
+                                    <button class="plus">
+                                        +
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="menu_burger">
+                                <div class="menu_weight">
+                                    450г.
+                                </div>
+                                <img src="image/Menu/menu_burger_2.webp" alt="burger" class="menu_img menu_img--second">
+                                <h5 class="menu_name">
+                                    Xот чилли бургер
+                                </h5>
+                                <div class="menu_composition">
+                                    Булочка, бекон, сыр, 2 котлеты, зелень, соус
+                                </div>
+                                <button class="menu_price">
+                                    20 руб.
+                                    <img src="svg/svg/shopping-basket.svg" alt="shopping-basket">
+                                </button>
+                                <div class="menu_add">
+                                    <button class="minus">
+                                        -
+                                    </button>
+                                    <span class="amount">1</span>
+                                    <button class="plus">
+                                        +
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="menu_burger">
+                                <div class="menu_weight">
+                                    450г.
+                                </div>
+                                <img src="image/Menu/menu_burger_3.webp" alt="burger" class="menu_img menu_img--third">
+                                <h5 class="menu_name">
+                                    Гавайский бургер
+                                </h5>
+                                <div class="menu_composition">
+                                    Булочка, бекон, сыр, 2 котлеты, зелень, соус
+                                </div>
+                                <button class="menu_price">
+                                    19 руб.
+                                    <img src="svg/svg/shopping-basket.svg" alt="shopping-basket">
+                                </button>
+                                <div class="menu_add">
+                                    <button class="minus">
+                                        -
+                                    </button>
+                                    <span class="amount">1</span>
+                                    <button class="plus">
+                                        +
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="menu_burger">
+                                <div class="menu_weight">
+                                    450г.
+                                </div>
+                                <img src="image/Menu/menu_burger_4.webp" alt="burger" class="menu_img menu_img--fourth">
+                                <h5 class="menu_name">
+                                    Cырный бургер
+                                </h5>
+                                <div class="menu_composition">
+                                    Булочка, бекон, сыр, 2 котлеты, зелень, соус
+                                </div>
+                                <button class="menu_price">
+                                    25 руб.
+                                    <img src="svg/svg/shopping-basket.svg" alt="shopping-basket">
+                                </button>
+                                <div class="menu_add">
+                                    <button class="minus">
+                                        -
+                                    </button>
+                                    <span class="amount">1</span>
+                                    <button class="plus">
+                                        +
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu_slide">
+                        <div class="menu_burgers">
+                            <div class="menu_burger">
+                                <div class="menu_weight">
+                                    450г.
+                                </div>
+                                <img src="image/Menu/menu_burger_1.webp" alt="burger" class="menu_img">
+                                <h5 class="menu_name">
+                                    Правильный бургер
+                                </h5>
+                                <div class="menu_composition">
+                                    Булочка, бекон, сыр, 2 котлеты, зелень, соус
+                                </div>
+                                <button class="menu_price">
+                                    21 руб.
+                                    <img src="svg/svg/shopping-basket.svg" alt="shopping-basket">
+                                </button>
+                                <div class="menu_add">
+                                    <button class="minus">
+                                        -
+                                    </button>
+                                    <span class="amount">1</span>
+                                    <button class="plus">
+                                        +
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="menu_burger">
+                                <div class="menu_weight">
+                                    450г.
+                                </div>
+                                <img src="image/Menu/menu_burger_2.webp" alt="burger" class="menu_img menu_img--second">
+                                <h5 class="menu_name">
+                                    Хот чилли бургер
+                                </h5>
+                                <div class="menu_composition">
+                                    Булочка, бекон, сыр, 2 котлеты, зелень, соус
+                                </div>
+                                <button class="menu_price">
+                                    20 руб.
+                                    <img src="svg/svg/shopping-basket.svg" alt="shopping-basket">
+                                </button>
+                                <div class="menu_add">
+                                    <button class="minus">
+                                        -
+                                    </button>
+                                    <span class="amount">1</span>
+                                    <button class="plus">
+                                        +
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="menu_burger">
+                                <div class="menu_weight">
+                                    450г.
+                                </div>
+                                <img src="image/Menu/menu_burger_3.webp" alt="burger" class="menu_img menu_img--third">
+                                <h5 class="menu_name">
+                                    Гавайский бургер
+                                </h5>
+                                <div class="menu_composition">
+                                    Булочка, бекон, сыр, 2 котлеты, зелень, соус
+                                </div>
+                                <button class="menu_price">
+                                    19 руб.
+                                    <img src="svg/svg/shopping-basket.svg" alt="shopping-basket">
+                                </button>
+                                <div class="menu_add">
+                                    <button class="minus">
+                                        -
+                                    </button>
+                                    <div class="amount">1</div>
+                                    <button class="plus">
+                                        +
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="menu_burger">
+                                <div class="menu_weight">
+                                    450г.
+                                </div>
+                                <img src="image/Menu/menu_burger_4.webp" alt="burger" class="menu_img menu_img--fourth">
+                                <h5 class="menu_name">
+                                    Сырный бургер
+                                </h5>
+                                <div class="menu_composition">
+                                    Булочка, бекон, сыр, 2 котлеты, зелень, соус
+                                </div>
+                                <button class="menu_price">
+                                    25 руб.
+                                    <img src="svg/svg/shopping-basket.svg" alt="shopping-basket">
+                                </button>
+                                <div class="menu_add">
+                                    <button class="minus">
+                                        -
+                                    </button>
+                                    <span class="amount">1</span>
+                                    <button class="plus">
+                                        +
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu_buttons">
+                        <div class="menu_button active">
+                            <span class="button">
+                                Новинки
+                            </span>
+                        </div>
+                        <div  class="menu_button">
+                            <span class="button">
+                                Популярные
+                            </span>
+                        </div>
+                        <div class="menu_button">
+                            <span class="button">
+                                Не острые
+                            </span>
+                        </div>
+                        <div class="menu_button">
+                            <span class="button">
+                                Острые
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="menu_more">
+                <button class="menu_other" type="button" id="more">
+                    <span>Ещё бургеры</span>
+                </button>
+                <div class="menu_burgers menu_burgers--more">
+                    <div class="menu_burger menu_burger--more">
+                        <div class="menu_weight">
+                            450г.
+                        </div>
+                        <img src="image/Menu/menu_burger_1.webp" alt="burger" class="menu_img">
+                        <h5 class="menu_name">
+                            Правильный бургер
+                        </h5>
+                        <div class="menu_composition">
+                            Булочка, бекон, сыр, 2 котлеты, зелень, соус
+                        </div>
+                        <button class="menu_price">
+                            21 руб.
+                            <img src="svg/svg/shopping-basket.svg" alt="shopping-basket">
+                        </button>
+                        <div class="menu_add">
+                            <button class="minus">
+                                -
+                            </button>
+                            <span class="amount">1</span>
+                            <button class="plus">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                    <div class="menu_burger menu_burger--more">
+                        <div class="menu_weight">
+                            450г.
+                        </div>
+                        <img src="image/Menu/menu_burger_2.webp" alt="burger" class="menu_img menu_img--second">
+                        <h5 class="menu_name">
+                            Хот чилли бургер
+                        </h5>
+                        <div class="menu_composition">
+                            Булочка, бекон, сыр, 2 котлеты, зелень, соус
+                        </div>
+                        <button class="menu_price">
+                            20 руб.
+                            <img src="svg/svg/shopping-basket.svg" alt="shopping-basket">
+                        </button>
+                        <div class="menu_add">
+                            <button class="minus">
+                                -
+                            </button>
+                            <span class="amount">1</span>
+                            <button class="plus">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                    <div class="menu_burger menu_burger--more">
+                        <div class="menu_weight">
+                            450г.
+                        </div>
+                        <img src="image/Menu/menu_burger_3.webp" alt="burger" class="menu_img menu_img--third">
+                        <h5 class="menu_name">
+                            Гавайский бургер
+                        </h5>
+                        <div class="menu_composition">
+                            Булочка, бекон, сыр, 2 котлеты, зелень, соус
+                        </div>
+                        <button class="menu_price">
+                            19 руб.
+                            <img src="svg/svg/shopping-basket.svg" alt="shopping-basket">
+                        </button>
+                        <div class="menu_add">
+                            <button class="minus">
+                                -
+                            </button>
+                            <div class="amount">1</div>
+                            <button class="plus">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                    <div class="menu_burger menu_burger--more">
+                        <div class="menu_weight">
+                            450г.
+                        </div>
+                        <img src="image/Menu/menu_burger_4.webp" alt="burger" class="menu_img menu_img--fourth">
+                        <h5 class="menu_name">
+                            Сырный бургер
+                        </h5>
+                        <div class="menu_composition">
+                            Булочка, бекон, сыр, 2 котлеты, зелень, соус
+                        </div>
+                        <button class="menu_price">
+                            25 руб.
+                            <img src="svg/svg/shopping-basket.svg" alt="shopping-basket">
+                        </button>
+                        <div class="menu_add">
+                            <button class="minus">
+                                -
+                            </button>
+                            <span class="amount">1</span>
+                            <button class="plus">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu_burgers menu_burgers--more">
+                    <div class="menu_burger menu_burger--more">
+                        <div class="menu_weight">
+                            450г.
+                        </div>
+                        <img src="image/Menu/menu_burger_1.webp" alt="burger" class="menu_img">
+                        <h5 class="menu_name">
+                            Правильный бургер
+                        </h5>
+                        <div class="menu_composition">
+                            Булочка, бекон, сыр, 2 котлеты, зелень, соус
+                        </div>
+                        <button class="menu_price">
+                            21 руб.
+                            <img src="svg/svg/shopping-basket.svg" alt="shopping-basket">
+                        </button>
+                        <div class="menu_add">
+                            <button class="minus">
+                                -
+                            </button>
+                            <span class="amount">1</span>
+                            <button class="plus">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                    <div class="menu_burger menu_burger--more">
+                        <div class="menu_weight">
+                            450г.
+                        </div>
+                        <img src="image/Menu/menu_burger_2.webp" alt="burger" class="menu_img menu_img--second">
+                        <h5 class="menu_name">
+                            Хот чилли бургер
+                        </h5>
+                        <div class="menu_composition">
+                            Булочка, бекон, сыр, 2 котлеты, зелень, соус
+                        </div>
+                        <button class="menu_price">
+                            20 руб.
+                            <img src="svg/svg/shopping-basket.svg" alt="shopping-basket">
+                        </button>
+                        <div class="menu_add">
+                            <button class="minus">
+                                -
+                            </button>
+                            <span class="amount">1</span>
+                            <button class="plus">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                    <div class="menu_burger menu_burger--more">
+                        <div class="menu_weight">
+                            450г.
+                        </div>
+                        <img src="image/Menu/menu_burger_3.webp" alt="burger" class="menu_img menu_img--third">
+                        <h5 class="menu_name">
+                            Гавайский бургер
+                        </h5>
+                        <div class="menu_composition">
+                            Булочка, бекон, сыр, 2 котлеты, зелень, соус
+                        </div>
+                        <button class="menu_price">
+                            19 руб.
+                            <img src="svg/svg/shopping-basket.svg" alt="shopping-basket">
+                        </button>
+                        <div class="menu_add">
+                            <button class="minus">
+                                -
+                            </button>
+                            <div class="amount">1</div>
+                            <button class="plus">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                    <div class="menu_burger menu_burger--more">
+                        <div class="menu_weight">
+                            450г.
+                        </div>
+                        <img src="image/Menu/menu_burger_4.webp" alt="burger" class="menu_img menu_img--fourth">
+                        <h5 class="menu_name">
+                            Сырный бургер
+                        </h5>
+                        <div class="menu_composition">
+                            Булочка, бекон, сыр, 2 котлеты, зелень, соус
+                        </div>
+                        <button class="menu_price">
+                            25 руб.
+                            <img src="svg/svg/shopping-basket.svg" alt="shopping-basket">
+                        </button>
+                        <div class="menu_add">
+                            <button class="minus">
+                                -
+                            </button>
+                            <span class="amount">1</span>
+                            <button class="plus">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/Menu-->
+
+    <!--Advantages-->
+    <section class="advantages">
+        <div class="container">
+
+           <div class="advantages_bg">
+                <div class="advantages_title">
+                    <img class="advantages_fire" src="image/Advantages/fire.webp" alt="fire">
+                    <h1>Наши преимущества</h1>
+                </div>
+
+                <div class="advantages_items">
+                    <div class="advantages_item">
+                        <div class="advantages_example">Мясо</div>
+                        <div class="advantages_info">
+                            У нас всегда только свежее мясо
+                        </div>
+                    </div>
+                    <div class="advantages_item">
+                        <div class="advantages_example">Перец</div>
+                        <div class="advantages_info">
+                            У нас только острые бургеры
+                        </div>
+                    </div>
+                    <div class="advantages_item">
+                        <div class="advantages_example">Булки</div>
+                        <div class="advantages_info">
+                            Мы сами печем булки, они всегда свежие
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <img src="image/Advantages/man.webp" alt="Chef" class="advantages_chef">
+
+            <img src="image/Advantages/pepper_1.webp" alt="pepper" class="advantages_pepper1">
+
+            <img src="image/Advantages/pepper_2.webp" alt="pepper" class="advantages_pepper2">
+
+            <img src="image/Advantages/pepper_3.webp" alt="pepper" class="advantages_pepper3">
+
+        </div>
+    </section>
+    <!--/Advantages-->
+
+    <!--About Us-->
+    <section class="about">
+        <div class="container">
+           <div class="about_point"></div>
+            <div class="about_content">
+                <div class="about_text">
+                    <h1 class="about_title">О нас</h1>
+                    <div class="about_info">
+                        Крафтовые бургеры. Полный цикл производства. Выпекаем домашнюю булочку, изготавливаем котлеты из натуральной говядины, варим авторские соусы. Используем только натуральные продукты. Ни каких полуфабрикатов и заморозки.
+
+                        <div>
+                            Авторская и американская кухня.
+                        </div>
+
+                        <div>
+                            Услуги: Wi-Fi, бизнес-ланч, бранч, доставка, парковка.
+                        </div>
+                    </div>
+                </div>
+                <img src="image/About_Us/dishes.webp" alt="dishes" class="about_img">
+            </div>
+            <img src="image/About_Us/pepper_about.webp" alt="peppers" class="about_peppers">
+        </div>
+    </section>
+    <!--/About Us-->
+
+    <!--Delivery-->
+    <section class="delivery">
+        <div class="container">
+            <h1 class="delivery_title">
+                доставка осуществляется
+            </h1>
+            <h2 class="delivery_time">
+                с 9:00 до 23:00
+            </h2>
+            <div class="delivery_text">
+                Все заказы, оформленные позднее или ранее, доставляются в эти часы.
+            </div>
+            <button class="delivery_button">
+                в каталог
+                <img src="svg/svg/right.svg" alt="arrow">
+            </button>
+            <img src="image/Delivery/delivery_burger.webp" alt="burger" class="delivery_burger">
+        </div>
+    </section>
+    <!--/Delivery-->
+
+    <!--Map-->
+    <section class="map">
+       <div class="map_surf"></div>
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A3d8e867d966e01b8c3d5f14aed46b37c5f7910a188ec341e9f21fefc876b0c75&amp;source=constructor" width="1" height="1" title="map"></iframe>
+    </section>
+    <!--/Map-->
+
+
+    <!--Contacts-->
+    <section class="contacts">
+        <div class="container">
+            <h3 class="contacts_title">наши контакты</h3>
+            <div class="contacts_content">
+                <div class="contacts_item">
+                    <div class="contacts_info">
+                        телефон:
+                    </div>
+                    <div class="contacts_data contacts_data--number">
+                        +375 29 397 90 82
+                    </div>
+                </div>
+                <div class="contacts_item">
+                    <div class="contacts_info">
+                        время работы:
+                    </div>
+                    <div class="contacts_data">
+                        Ежедневно с 9:00 до 23:00
+                    </div>
+                </div>
+                <div class="contacts_item contacts_item--particular">
+                    <div class="contacts_info">
+                        Email:
+                    </div>
+                    <div class="contacts_data">
+                        chilli.burger@gmail.com
+                    </div>
+                </div>
+                <div class="contacts_item">
+                    <div class="contacts_info">
+                        социальные сети
+                    </div>
+                    <div class="contacts_networks">
+                        <a href="#">
+                            <img src="svg/svg/brands-and-logotypes.svg" alt="vk" class="contacts_vk">
+                        </a>
+                        <a href="#">
+                            <img src="svg/svg/instagram.svg" alt="inst" class="contacts_inst">
+                        </a>
+                        <a href="#">
+                            <img src="svg/svg/facebook.svg" alt="facebook" class="contacts_facebook">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/Contacts-->
+</div>
+
+    <!--Back call-->
+<div class="popup" id="popup_call">
+    <div class="popup_body">
+        <div class="popup_content">
+            <a href="#" class="popup_close close-popup">X</a>
+            <h1 class="popup_title">
+                Обратный звонок
+            </h1>
+            <div class="popup_info"> Мы перезвоним вам в ближайшие 10 минут </div>
+            <form class="popup_form" action="#" method="get">
+
+                <p class="popup_error popup_error--first" title="Введите имя">!</p>
+
+
+                <div class="floating">
+                    <input id="popup_name" class="popup_input" name="username" type="text" placeholder="Username"/>
+                    <label for="popup_name" class="popup_label" data-content="Имя">
+                        <span class="hidden--visually">
+                            Ваше имя
+                        </span>
+                    </label>
+                </div>
+
+                <div class="floating">
+                    <input id="phone_number" type="tel" class="popup_input" name="number" type="text" placeholder="Password"/>
+                    <label for="phone_number" class="popup_label" data-content="Ваш номер: +375..." >
+                        <span class="hidden--visually">
+                            Ваш номер
+                        </span>
+                    </label>
+                </div>
+
+                <p class="popup_error popup_error--second" title="Неправильно введён номер">!</p>
+
+
+                <button class="popup_button" type="submit" value="send" id="call_button">Отправить
+                    <svg class='svg'>
+                        <rect></rect>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+    <!--/Back call-->
+
+    <!--Basket-->
+<div class="popup popup_basket" id="popup_basket">
+    <div class="popup_body">
+        <div class="popup_content">
+            <a href="#" class="popup_close close-popup">X</a>
+            <h1 class="popup_title">
+                Корзина
+            </h1>
+            <div class="popup_choice">
+                Ваш выбор:
+            </div>
+
+            <div class="popup_list">
+               На данный момент корзина пуста
+                <template id="food-list">
+                   <div class="food_item">
+                        <img src="svg/svg/Burger.svg" alt="burger" class="food_img">
+                        <div class="food_name">Вкусный бургер</div>
+                        <div class="food_cost">18 руб.</div>
+                        <button class="food_delete" type="button">
+                            <img src="svg/svg/trash.svg" alt="trash can">
+                        </button>
+                   </div>
+                </template>
+            </div>
+
+            <div class="popup_total">К оплате: <span class="total_price">0 руб.</span></div>
+
+            <button class="popup_button" type="submit" value="purchase" id="purchase_button">Оплатить
+                <svg class='svg'>
+                    <rect></rect>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+    <!--/Basket-->
+<script src="script.js"></script>
+</body>
+</html>
